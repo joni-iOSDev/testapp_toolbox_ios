@@ -9,11 +9,13 @@ import Foundation
 import Alamofire
 
 fileprivate struct Constants {
-    static let auth = "/v1/mobile/auth"
+    static let authPath = "/v1/mobile/auth"
+    static let carouselsPath = "/v1/mobile/data"
 }
 
 enum ToolBooxEndpoints {
-    case auth
+    case postAuth
+    case getCarousels(token: TokenSession)
 }
 
 
@@ -32,27 +34,45 @@ extension ToolBooxEndpoints: EndpointProtocol {
     
     var path: String {
         switch self {
-            case .auth:
-                return Constants.auth
+            case .postAuth:
+                return Constants.authPath
+            case .getCarousels:
+                return Constants.carouselsPath
         }
     }
     
     var httpMerthod: HTTPMethod {
         switch self {
-            case .auth:
+            case .postAuth:
                 return .post
+            case .getCarousels:
+                return .get
         }
     }
     
     var headers: HTTPHeaders? {
-        return nil
+        switch self {
+            case .getCarousels(let tokenSaved):
+                print(tokenSaved.0)
+                print(tokenSaved.1)
+
+                let dict = ["authorization": "\(tokenSaved.0) \(tokenSaved.1)"]
+                let headers = HTTPHeaders(dict)
+                return headers
+                
+            default:
+                return nil
+        }
     }
     
     var params: Parameters? {
         switch self {
-            case .auth:
+            case .postAuth:
                 let authParams = ["sub": "ToolboxMobileTest"]
                 return authParams
+                
+            default:
+                return nil
         }
     }
     

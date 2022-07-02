@@ -9,4 +9,5 @@ import Foundation
 
 protocol LogInDisplayLogic: AnyObject {
     func showFailureLogin(with message: String)
+    func showNextScene()
 }

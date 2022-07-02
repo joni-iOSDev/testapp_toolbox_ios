@@ -12,10 +12,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
 
     var coordinator: MainCoordinator?
-
+    
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         coordinator = MainCoordinator(scene: windowScene)
+        let sessionManager = SessionManager()
         coordinator?.start()
         guard let _ = (scene as? UIWindowScene) else { return }
     }

@@ -8,10 +8,10 @@
 import Foundation
 import Alamofire
 
-public typealias OnResponse = (Result<Data, AFError>) -> Void
+public typealias RouterResponse = (Result<Data, AFError>) -> Void
 
 protocol AppNetworkRouter {
     /// Generic Type
     associatedtype EndPoint: EndpointProtocol
-    func request(_ route: EndPoint, onResponse: @escaping OnResponse)
+    func request(_ route: EndPoint, onResponse: @escaping RouterResponse)
 }

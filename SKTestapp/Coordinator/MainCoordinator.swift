@@ -14,7 +14,7 @@ class MainCoordinator: CoordinatorProtocol {
     
     var navigationController: UINavigationController
     
-    init(scene: UIWindowScene  ) {
+    init(scene: UIWindowScene) {
         self.navigationController = UINavigationController()
         window = UIWindow(frame: scene.coordinateSpace.bounds)
         window.windowScene = scene
@@ -23,7 +23,7 @@ class MainCoordinator: CoordinatorProtocol {
     
     // MARK: - Init Flow
     func start() {
-        goToLogIn()
+        SessionManager.shared.isLogged() ? goToHome() : goToLogIn()
     }
     
     //MARK: - Setup COORDINATOR
@@ -41,6 +41,18 @@ extension MainCoordinator {
         let login = LogInViewController()
         let configurator = LogInConfiguratorImplementation()
         configurator.configure(login, coordinator: self)
-        navigationController.pushViewController(login, animated: true)
+        navigationController = UINavigationController(rootViewController: login)
+        self.setupCoordinator()
+    }
+    
+    func goToHome() {
+        let homeVC = HomeViewController()
+        let homeConfigurator = HomeConfiguratorImplementation()
+        homeConfigurator.configure(homeVC, coordinator: self)
+        
+        let navController = UINavigationController(rootViewController: homeVC)
+        navigationController = navController
+        self.setupCoordinator()
+
     }
 }

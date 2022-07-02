@@ -7,15 +7,17 @@
 
 import Foundation
 
-typealias SendLoginRequestUseCaseResult = Result<[String:Any], Error>
 /// Use Case
 class SendLoginRequestUseCase {
     
-    var repository: AuthenticationRepository?
+    var repository: AuthenticationRepository
     
-    func executeRequest(_ credentials: UserCredentials,_ complemtionHandler: @escaping ((SendLoginRequestUseCaseResult) -> Void)) {
-        repository?.loginRequest(with: credentials, completionHandler: {
-            
-        })
+    init(repository: AuthenticationRepository) {
+        self.repository = repository
     }
+    func executeRequest(_ credentials: UserCredentials,_ complemtionHandler: @escaping ((Result<UserAuthentication, AppUserCredentialErrors>) -> Void)) {
+        repository.loginRequest(with: credentials, completionHandler: complemtionHandler)
+    }
+    
+
 }

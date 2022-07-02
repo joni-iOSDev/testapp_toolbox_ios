@@ -13,6 +13,10 @@ class LogInPresenterImplementation {
     weak var viewController: LogInDisplayLogic?
     var logInUseCase: SendLoginRequestUseCase?
     
+    init(viewControllerDisplayLogic: LogInDisplayLogic) {
+        self.viewController = viewControllerDisplayLogic
+    }
+    
 }
 
 extension LogInPresenterImplementation: LogInPresenter {
@@ -32,17 +36,21 @@ extension LogInPresenterImplementation: LogInPresenter {
         }
         
         let userCredential = UserCredentials(username: user, password: pwd)
+        
         return userCredential
     }
     
     func requestLogin(credentials: UserCredentials) {
         
-        logInUseCase?.executeRequest(credentials, { [weak self] resultUseCase in
-            switch resultUseCase {
-                case .success(_):
-                    ()
-                case .failure(_):
-                    self?.viewController?.showFailureLogin(with: "usuario o contraseña incorrectos")
+        logInUseCase?.executeRequest(credentials, { [weak self] authResult in
+            switch authResult {
+            case .success(let data):
+                    SessionManager.shared.setAuthetication(auth: data)
+                    self?.viewController?.showNextScene()
+            case .failure(let error):
+                if error == .invalidCredentials {
+                    self?.viewController?.showFailureLogin(with: error.rawValue)
+                }
             }
         })
     }

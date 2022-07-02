@@ -45,4 +45,8 @@ extension LogInViewController: LogInDisplayLogic {
     func showFailureLogin(with message: String) {
         showMessage(text: message)
     }
+    
+    func showNextScene() {
+        self.coordinator?.goToHome()
+    }
 }

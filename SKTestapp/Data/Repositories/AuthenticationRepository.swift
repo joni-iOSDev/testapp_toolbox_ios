@@ -8,18 +8,23 @@
 import Foundation
 
 protocol AuthenticationRepository: AnyObject {
-    func loginRequest(with credentials: UserCredentials, completionHandler: @escaping (()->Void))
+    func loginRequest(with credentials: UserCredentials, completionHandler: @escaping ((Result<UserAuthentication, AppUserCredentialErrors>)->Void))
 }
 
 class AuthenticationRepositoryImplementation: AuthenticationRepository {
     
-    var datasource: AuthenticationDataSource?
+    private var datasource: AuthenticationDataSource
     
-    func loginRequest(with credentials: UserCredentials, completionHandler: @escaping (()->Void)) {
-        datasource?.loginAPIToolBook(onSuccess: {
-            
+    init(source: AuthenticationDataSource) {
+        self.datasource = source
+    }
+    
+    func loginRequest(with credentials: UserCredentials, completionHandler: @escaping ((Result<UserAuthentication, AppUserCredentialErrors>)->Void)) {
+        
+        datasource.loginAPIToolBook(onSuccess: { userAuthenticationEntity in
+            completionHandler(.success(userAuthenticationEntity))
         }, onFailure: {
-            
+            completionHandler(.failure(.invalidCredentials))
         })
     }
 }

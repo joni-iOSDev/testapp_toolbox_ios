@@ -11,7 +11,7 @@ import Alamofire
 class Router<EndPoint: EndpointProtocol>: AppNetworkRouter {
     
     func request(_ endpoint: EndPoint,
-                 onResponse: @escaping OnResponse) {
+                 onResponse: @escaping RouterResponse) {
         
         let url = endpoint.baseURL.appendingPathComponent(endpoint.path)
         print("APP123 URL Request -> \(url)")

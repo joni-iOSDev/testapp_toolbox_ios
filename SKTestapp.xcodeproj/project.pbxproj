@@ -34,12 +34,26 @@
 		97F00A68286ED63400399F2E /* LogInConfiguratorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00A67286ED63400399F2E /* LogInConfiguratorImplementation.swift */; };
 		97F00A76286ED75E00399F2E /* LogInDisplayLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00A75286ED75E00399F2E /* LogInDisplayLogic.swift */; };
 		97F00A7A286EDCC800399F2E /* SendLogInRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00A79286EDCC800399F2E /* SendLogInRequest.swift */; };
-		97F00A7C286EDD5500399F2E /* SendLogOutRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00A7B286EDD5500399F2E /* SendLogOutRequest.swift */; };
 		97F00A81286F4F0600399F2E /* UserCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00A80286F4F0600399F2E /* UserCredentials.swift */; };
 		97F00A84286F9A8800399F2E /* AuthenticationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00A83286F9A8700399F2E /* AuthenticationRepository.swift */; };
 		97F00A87286F9B1400399F2E /* AuthenticationDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00A86286F9B1400399F2E /* AuthenticationDataSource.swift */; };
 		97F00A8B286FEF2500399F2E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00A89286FEF2500399F2E /* HomeViewController.swift */; };
 		97F00A8C286FEF2500399F2E /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97F00A8A286FEF2500399F2E /* HomeViewController.xib */; };
+		97F00A8F286FFF5E00399F2E /* HomeConfiguratorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00A8E286FFF5E00399F2E /* HomeConfiguratorImplementation.swift */; };
+		97F00A91286FFFB100399F2E /* HomePresenterImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00A90286FFFB100399F2E /* HomePresenterImplementation.swift */; };
+		97F00A932870002900399F2E /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00A922870002900399F2E /* HomePresenter.swift */; };
+		97F00A952870005400399F2E /* HomeDisplayLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00A942870005400399F2E /* HomeDisplayLogic.swift */; };
+		97F00A97287005DE00399F2E /* CarouselsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00A96287005DE00399F2E /* CarouselsRepository.swift */; };
+		97F00AA2287017CA00399F2E /* UserAuthenticationEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00AA1287017CA00399F2E /* UserAuthenticationEntity.swift */; };
+		97F00AA42870188F00399F2E /* UserAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00AA32870188F00399F2E /* UserAuthentication.swift */; };
+		97F00AA9287085B700399F2E /* CarouselDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00AA8287085B600399F2E /* CarouselDataSource.swift */; };
+		97F00AAB2870897000399F2E /* GetCarousels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00AAA2870897000399F2E /* GetCarousels.swift */; };
+		97F00AAD28708C1500399F2E /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00AAC28708C1500399F2E /* Movie.swift */; };
+		97F00AAF28708C2400399F2E /* MoviesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00AAE28708C2400399F2E /* MoviesEntity.swift */; };
+		97F00AB22870B05E00399F2E /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00AB12870B05E00399F2E /* SessionManager.swift */; };
+		97F00AB52870D01600399F2E /* CarouselEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00AB42870D01600399F2E /* CarouselEntity.swift */; };
+		97F00AB72870D04D00399F2E /* Carousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00AB62870D04D00399F2E /* Carousel.swift */; };
+		97F00AB92870E9EA00399F2E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00AB82870E9EA00399F2E /* HomeViewModel.swift */; };
 		A25AD2F88D8DAF7CB3143048 /* Pods_SKTestappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70DC93F1DB82D6A1C22D13E4 /* Pods_SKTestappTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -94,12 +108,26 @@
 		97F00A67286ED63400399F2E /* LogInConfiguratorImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInConfiguratorImplementation.swift; sourceTree = "<group>"; };
 		97F00A75286ED75E00399F2E /* LogInDisplayLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInDisplayLogic.swift; sourceTree = "<group>"; };
 		97F00A79286EDCC800399F2E /* SendLogInRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendLogInRequest.swift; sourceTree = "<group>"; };
-		97F00A7B286EDD5500399F2E /* SendLogOutRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendLogOutRequest.swift; sourceTree = "<group>"; };
 		97F00A80286F4F0600399F2E /* UserCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCredentials.swift; sourceTree = "<group>"; };
 		97F00A83286F9A8700399F2E /* AuthenticationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRepository.swift; sourceTree = "<group>"; };
 		97F00A86286F9B1400399F2E /* AuthenticationDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationDataSource.swift; sourceTree = "<group>"; };
 		97F00A89286FEF2500399F2E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		97F00A8A286FEF2500399F2E /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		97F00A8E286FFF5E00399F2E /* HomeConfiguratorImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeConfiguratorImplementation.swift; sourceTree = "<group>"; };
+		97F00A90286FFFB100399F2E /* HomePresenterImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterImplementation.swift; sourceTree = "<group>"; };
+		97F00A922870002900399F2E /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		97F00A942870005400399F2E /* HomeDisplayLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDisplayLogic.swift; sourceTree = "<group>"; };
+		97F00A96287005DE00399F2E /* CarouselsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselsRepository.swift; sourceTree = "<group>"; };
+		97F00AA1287017CA00399F2E /* UserAuthenticationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthenticationEntity.swift; sourceTree = "<group>"; };
+		97F00AA32870188F00399F2E /* UserAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthentication.swift; sourceTree = "<group>"; };
+		97F00AA8287085B600399F2E /* CarouselDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselDataSource.swift; sourceTree = "<group>"; };
+		97F00AAA2870897000399F2E /* GetCarousels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCarousels.swift; sourceTree = "<group>"; };
+		97F00AAC28708C1500399F2E /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		97F00AAE28708C2400399F2E /* MoviesEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesEntity.swift; sourceTree = "<group>"; };
+		97F00AB12870B05E00399F2E /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		97F00AB42870D01600399F2E /* CarouselEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselEntity.swift; sourceTree = "<group>"; };
+		97F00AB62870D04D00399F2E /* Carousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carousel.swift; sourceTree = "<group>"; };
+		97F00AB82870E9EA00399F2E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		C3527BFB41AC8BFFF2B08D85 /* Pods-SKTestapp-SKTestappUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKTestapp-SKTestappUITests.release.xcconfig"; path = "Target Support Files/Pods-SKTestapp-SKTestappUITests/Pods-SKTestapp-SKTestappUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D911B34E080C03270B082477 /* Pods-SKTestappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKTestappTests.release.xcconfig"; path = "Target Support Files/Pods-SKTestappTests/Pods-SKTestappTests.release.xcconfig"; sourceTree = "<group>"; };
 		DE715D50A8BAF191BAE7E124 /* Pods-SKTestappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKTestappTests.debug.xcconfig"; path = "Target Support Files/Pods-SKTestappTests/Pods-SKTestappTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -183,7 +211,6 @@
 		97F009FB286EAAF000399F2E /* SKTestapp */ = {
 			isa = PBXGroup;
 			children = (
-				97F00A82286F9A2E00399F2E /* New Group */,
 				97F00A59286ECACC00399F2E /* Coordinator */,
 				97F00A42286EBF6500399F2E /* Scenes */,
 				97F00A35286EB2B000399F2E /* Core */,
@@ -232,7 +259,7 @@
 		97F00A35286EB2B000399F2E /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				97F00A7F286F4EE500399F2E /* UserCredential */,
+				97F00AB02870AFBB00399F2E /* SessionManager */,
 				97F00A77286EDC3100399F2E /* UsesCases */,
 				97F00A36286EB2B800399F2E /* TestAppError */,
 			);
@@ -289,6 +316,7 @@
 		97F00A62286ED50D00399F2E /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				97F00A9E287015F600399F2E /* Entities */,
 				97F00A85286F9AEF00399F2E /* Source */,
 				97F00A63286ED54200399F2E /* Repositories */,
 				97F00A2C286EAD9D00399F2E /* Networking */,
@@ -300,6 +328,7 @@
 			isa = PBXGroup;
 			children = (
 				97F00A83286F9A8700399F2E /* AuthenticationRepository.swift */,
+				97F00A96287005DE00399F2E /* CarouselsRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -317,7 +346,7 @@
 			isa = PBXGroup;
 			children = (
 				97F00A79286EDCC800399F2E /* SendLogInRequest.swift */,
-				97F00A7B286EDD5500399F2E /* SendLogOutRequest.swift */,
+				97F00AAA2870897000399F2E /* GetCarousels.swift */,
 			);
 			path = UsesCases;
 			sourceTree = "<group>";
@@ -333,6 +362,9 @@
 		97F00A7E286F4ED400399F2E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				97F00AA32870188F00399F2E /* UserAuthentication.swift */,
+				97F00AAC28708C1500399F2E /* Movie.swift */,
+				97F00AB62870D04D00399F2E /* Carousel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -345,17 +377,11 @@
 			path = UserCredential;
 			sourceTree = "<group>";
 		};
-		97F00A82286F9A2E00399F2E /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
-			sourceTree = "<group>";
-		};
 		97F00A85286F9AEF00399F2E /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				97F00A86286F9B1400399F2E /* AuthenticationDataSource.swift */,
+				97F00AA8287085B600399F2E /* CarouselDataSource.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -364,8 +390,11 @@
 			isa = PBXGroup;
 			children = (
 				97F00A8D286FF3A600399F2E /* Implementations */,
+				97F00A922870002900399F2E /* HomePresenter.swift */,
+				97F00A942870005400399F2E /* HomeDisplayLogic.swift */,
 				97F00A89286FEF2500399F2E /* HomeViewController.swift */,
 				97F00A8A286FEF2500399F2E /* HomeViewController.xib */,
+				97F00AB82870E9EA00399F2E /* HomeViewModel.swift */,
 			);
 			path = HomeScene;
 			sourceTree = "<group>";
@@ -373,8 +402,29 @@
 		97F00A8D286FF3A600399F2E /* Implementations */ = {
 			isa = PBXGroup;
 			children = (
+				97F00A90286FFFB100399F2E /* HomePresenterImplementation.swift */,
+				97F00A8E286FFF5E00399F2E /* HomeConfiguratorImplementation.swift */,
 			);
 			path = Implementations;
+			sourceTree = "<group>";
+		};
+		97F00A9E287015F600399F2E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				97F00AA1287017CA00399F2E /* UserAuthenticationEntity.swift */,
+				97F00AAE28708C2400399F2E /* MoviesEntity.swift */,
+				97F00AB42870D01600399F2E /* CarouselEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		97F00AB02870AFBB00399F2E /* SessionManager */ = {
+			isa = PBXGroup;
+			children = (
+				97F00A7F286F4EE500399F2E /* UserCredential */,
+				97F00AB12870B05E00399F2E /* SessionManager.swift */,
+			);
+			path = SessionManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -621,18 +671,32 @@
 				97F00A5D286ECD6400399F2E /* MainCoordinator.swift in Sources */,
 				97F00A32286EAF7600399F2E /* EndpointProtocol.swift in Sources */,
 				97F00A2E286EAE5B00399F2E /* Router.swift in Sources */,
+				97F00A97287005DE00399F2E /* CarouselsRepository.swift in Sources */,
 				97F00A81286F4F0600399F2E /* UserCredentials.swift in Sources */,
+				97F00AAF28708C2400399F2E /* MoviesEntity.swift in Sources */,
 				97F00A66286ED5D600399F2E /* LogInPresenterImplementation.swift in Sources */,
+				97F00AA2287017CA00399F2E /* UserAuthenticationEntity.swift in Sources */,
+				97F00A8F286FFF5E00399F2E /* HomeConfiguratorImplementation.swift in Sources */,
 				97F00A3A286EB4AA00399F2E /* JSONHelper.swift in Sources */,
+				97F00A952870005400399F2E /* HomeDisplayLogic.swift in Sources */,
+				97F00AB22870B05E00399F2E /* SessionManager.swift in Sources */,
+				97F00AA9287085B700399F2E /* CarouselDataSource.swift in Sources */,
 				97F00A8B286FEF2500399F2E /* HomeViewController.swift in Sources */,
 				97F00A7A286EDCC800399F2E /* SendLogInRequest.swift in Sources */,
 				97F00A34286EB06C00399F2E /* NetworkEnvironment.swift in Sources */,
+				97F00AAD28708C1500399F2E /* Movie.swift in Sources */,
+				97F00AB72870D04D00399F2E /* Carousel.swift in Sources */,
+				97F00AB92870E9EA00399F2E /* HomeViewModel.swift in Sources */,
+				97F00AAB2870897000399F2E /* GetCarousels.swift in Sources */,
 				97F00A5B286ECD3000399F2E /* CoordinatorProtocol.swift in Sources */,
 				97F00A30286EAF1E00399F2E /* AppNetworkRouter.swift in Sources */,
+				97F00A932870002900399F2E /* HomePresenter.swift in Sources */,
 				97F00A5F286ECFB600399F2E /* ToolBooxEndpoints.swift in Sources */,
-				97F00A7C286EDD5500399F2E /* SendLogOutRequest.swift in Sources */,
 				97F00A84286F9A8800399F2E /* AuthenticationRepository.swift in Sources */,
+				97F00AA42870188F00399F2E /* UserAuthentication.swift in Sources */,
 				97F009FD286EAAF000399F2E /* AppDelegate.swift in Sources */,
+				97F00AB52870D01600399F2E /* CarouselEntity.swift in Sources */,
+				97F00A91286FFFB100399F2E /* HomePresenterImplementation.swift in Sources */,
 				97F00A57286EC68800399F2E /* LogInViewController.swift in Sources */,
 				97F00A87286F9B1400399F2E /* AuthenticationDataSource.swift in Sources */,
 				97F00A61286ED4CC00399F2E /* LogInPresenter.swift in Sources */,

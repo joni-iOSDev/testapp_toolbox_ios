@@ -14,13 +14,11 @@ protocol LogInConfigurator: AnyObject {
 class LogInConfiguratorImplementation: LogInConfigurator {
     
     func configure(_ viewController: LogInViewController, coordinator: MainCoordinator) {
-        let presenterImplementation =  LogInPresenterImplementation()
-        let loginUseCase = SendLoginRequestUseCase()
+        let presenterImplementation =  LogInPresenterImplementation(viewControllerDisplayLogic: viewController)
         let authenticationDatasource = AuthenticationDataSourceImplementation()
-        let authenticationRepository = AuthenticationRepositoryImplementation()
-        
-        authenticationRepository.datasource = authenticationDatasource
-        loginUseCase.repository = authenticationRepository
+        let authenticationRepository = AuthenticationRepositoryImplementation(source: authenticationDatasource)
+        let loginUseCase = SendLoginRequestUseCase(repository: authenticationRepository)
+
         viewController.coordinator = coordinator
         viewController.presenter = presenterImplementation
         presenterImplementation.logInUseCase = loginUseCase

@@ -8,22 +8,26 @@
 import Foundation
 
 protocol AuthenticationDataSource: AnyObject {
-    func loginAPIToolBook(onSuccess: @escaping (()->Void), onFailure: @escaping (()->Void))
+    func loginAPIToolBook(onSuccess: @escaping ((UserAuthentication)->Void), onFailure: @escaping (()->Void))
 }
 
 class AuthenticationDataSourceImplementation: AuthenticationDataSource {
     
-    func loginAPIToolBook(onSuccess: @escaping (()->Void), onFailure: @escaping (()->Void)) {
+    let router = Router<ToolBooxEndpoints>()
+
+    func loginAPIToolBook(onSuccess: @escaping ((UserAuthentication)->Void), onFailure: @escaping (()->Void)) {
         
-        let router = Router<ToolBooxEndpoints>()
-        
-        router.request(.auth) { resultAuth in
+        router.request(.postAuth) { resultAuth in
             switch resultAuth {
                 case .success(let dataAuth):
-                    print("login")
-                    onSuccess()
-                case .failure(let error):
-                    print("ups algo paso")
+                    do {
+                        let authDataResponseDecoded = try newJSONDecoder().decode(UserAuthenticationEntity.self, from: dataAuth)
+                            onSuccess(authDataResponseDecoded)
+                        
+                    } catch let error {
+                        onFailure()
+                    }
+                case .failure(_):
                     onFailure()
             }
         }
