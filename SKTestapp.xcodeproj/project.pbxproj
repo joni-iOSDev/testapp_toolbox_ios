@@ -11,8 +11,6 @@
 		6F7C1AE541AF10757A51AE6E /* Pods_SKTestapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A8492D097ABE9C2B4A2C111 /* Pods_SKTestapp.framework */; };
 		97F009FD286EAAF000399F2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F009FC286EAAF000399F2E /* AppDelegate.swift */; };
 		97F009FF286EAAF000399F2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F009FE286EAAF000399F2E /* SceneDelegate.swift */; };
-		97F00A01286EAAF000399F2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00A00286EAAF000399F2E /* ViewController.swift */; };
-		97F00A04286EAAF000399F2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97F00A02286EAAF000399F2E /* Main.storyboard */; };
 		97F00A06286EAAF100399F2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97F00A05286EAAF100399F2E /* Assets.xcassets */; };
 		97F00A09286EAAF100399F2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97F00A07286EAAF100399F2E /* LaunchScreen.storyboard */; };
 		97F00A14286EAAF100399F2E /* SKTestappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00A13286EAAF100399F2E /* SKTestappTests.swift */; };
@@ -26,6 +24,22 @@
 		97F00A3A286EB4AA00399F2E /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00A39286EB4AA00399F2E /* JSONHelper.swift */; };
 		97F00A3F286EB58200399F2E /* RouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00A3E286EB58200399F2E /* RouterTest.swift */; };
 		97F00A41286EB98200399F2E /* EndpointTestMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00A40286EB98200399F2E /* EndpointTestMock.swift */; };
+		97F00A57286EC68800399F2E /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00A55286EC68800399F2E /* LogInViewController.swift */; };
+		97F00A58286EC68800399F2E /* LogInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97F00A56286EC68800399F2E /* LogInViewController.xib */; };
+		97F00A5B286ECD3000399F2E /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00A5A286ECD3000399F2E /* CoordinatorProtocol.swift */; };
+		97F00A5D286ECD6400399F2E /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00A5C286ECD6400399F2E /* MainCoordinator.swift */; };
+		97F00A5F286ECFB600399F2E /* ToolBooxEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00A5E286ECFB600399F2E /* ToolBooxEndpoints.swift */; };
+		97F00A61286ED4CC00399F2E /* LogInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00A60286ED4CC00399F2E /* LogInPresenter.swift */; };
+		97F00A66286ED5D600399F2E /* LogInPresenterImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00A65286ED5D600399F2E /* LogInPresenterImplementation.swift */; };
+		97F00A68286ED63400399F2E /* LogInConfiguratorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00A67286ED63400399F2E /* LogInConfiguratorImplementation.swift */; };
+		97F00A76286ED75E00399F2E /* LogInDisplayLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00A75286ED75E00399F2E /* LogInDisplayLogic.swift */; };
+		97F00A7A286EDCC800399F2E /* SendLogInRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00A79286EDCC800399F2E /* SendLogInRequest.swift */; };
+		97F00A7C286EDD5500399F2E /* SendLogOutRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00A7B286EDD5500399F2E /* SendLogOutRequest.swift */; };
+		97F00A81286F4F0600399F2E /* UserCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00A80286F4F0600399F2E /* UserCredentials.swift */; };
+		97F00A84286F9A8800399F2E /* AuthenticationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00A83286F9A8700399F2E /* AuthenticationRepository.swift */; };
+		97F00A87286F9B1400399F2E /* AuthenticationDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00A86286F9B1400399F2E /* AuthenticationDataSource.swift */; };
+		97F00A8B286FEF2500399F2E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00A89286FEF2500399F2E /* HomeViewController.swift */; };
+		97F00A8C286FEF2500399F2E /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97F00A8A286FEF2500399F2E /* HomeViewController.xib */; };
 		A25AD2F88D8DAF7CB3143048 /* Pods_SKTestappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70DC93F1DB82D6A1C22D13E4 /* Pods_SKTestappTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,8 +68,6 @@
 		97F009F9286EAAF000399F2E /* SKTestapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKTestapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97F009FC286EAAF000399F2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97F009FE286EAAF000399F2E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		97F00A00286EAAF000399F2E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		97F00A03286EAAF000399F2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		97F00A05286EAAF100399F2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97F00A08286EAAF100399F2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97F00A0A286EAAF100399F2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -72,6 +84,22 @@
 		97F00A39286EB4AA00399F2E /* JSONHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
 		97F00A3E286EB58200399F2E /* RouterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterTest.swift; sourceTree = "<group>"; };
 		97F00A40286EB98200399F2E /* EndpointTestMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointTestMock.swift; sourceTree = "<group>"; };
+		97F00A55286EC68800399F2E /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		97F00A56286EC68800399F2E /* LogInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogInViewController.xib; sourceTree = "<group>"; };
+		97F00A5A286ECD3000399F2E /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		97F00A5C286ECD6400399F2E /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		97F00A5E286ECFB600399F2E /* ToolBooxEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBooxEndpoints.swift; sourceTree = "<group>"; };
+		97F00A60286ED4CC00399F2E /* LogInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInPresenter.swift; sourceTree = "<group>"; };
+		97F00A65286ED5D600399F2E /* LogInPresenterImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInPresenterImplementation.swift; sourceTree = "<group>"; };
+		97F00A67286ED63400399F2E /* LogInConfiguratorImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInConfiguratorImplementation.swift; sourceTree = "<group>"; };
+		97F00A75286ED75E00399F2E /* LogInDisplayLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInDisplayLogic.swift; sourceTree = "<group>"; };
+		97F00A79286EDCC800399F2E /* SendLogInRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendLogInRequest.swift; sourceTree = "<group>"; };
+		97F00A7B286EDD5500399F2E /* SendLogOutRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendLogOutRequest.swift; sourceTree = "<group>"; };
+		97F00A80286F4F0600399F2E /* UserCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCredentials.swift; sourceTree = "<group>"; };
+		97F00A83286F9A8700399F2E /* AuthenticationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRepository.swift; sourceTree = "<group>"; };
+		97F00A86286F9B1400399F2E /* AuthenticationDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationDataSource.swift; sourceTree = "<group>"; };
+		97F00A89286FEF2500399F2E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		97F00A8A286FEF2500399F2E /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		C3527BFB41AC8BFFF2B08D85 /* Pods-SKTestapp-SKTestappUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKTestapp-SKTestappUITests.release.xcconfig"; path = "Target Support Files/Pods-SKTestapp-SKTestappUITests/Pods-SKTestapp-SKTestappUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D911B34E080C03270B082477 /* Pods-SKTestappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKTestappTests.release.xcconfig"; path = "Target Support Files/Pods-SKTestappTests/Pods-SKTestappTests.release.xcconfig"; sourceTree = "<group>"; };
 		DE715D50A8BAF191BAE7E124 /* Pods-SKTestappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKTestappTests.debug.xcconfig"; path = "Target Support Files/Pods-SKTestappTests/Pods-SKTestappTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -155,13 +183,14 @@
 		97F009FB286EAAF000399F2E /* SKTestapp */ = {
 			isa = PBXGroup;
 			children = (
+				97F00A82286F9A2E00399F2E /* New Group */,
+				97F00A59286ECACC00399F2E /* Coordinator */,
 				97F00A42286EBF6500399F2E /* Scenes */,
 				97F00A35286EB2B000399F2E /* Core */,
-				97F00A2C286EAD9D00399F2E /* Networking */,
+				97F00A7D286F4EC800399F2E /* Domain */,
+				97F00A62286ED50D00399F2E /* Data */,
 				97F009FC286EAAF000399F2E /* AppDelegate.swift */,
 				97F009FE286EAAF000399F2E /* SceneDelegate.swift */,
-				97F00A00286EAAF000399F2E /* ViewController.swift */,
-				97F00A02286EAAF000399F2E /* Main.storyboard */,
 				97F00A05286EAAF100399F2E /* Assets.xcassets */,
 				97F00A07286EAAF100399F2E /* LaunchScreen.storyboard */,
 				97F00A0A286EAAF100399F2E /* Info.plist */,
@@ -195,6 +224,7 @@
 				97F00A31286EAF7600399F2E /* EndpointProtocol.swift */,
 				97F00A33286EB06C00399F2E /* NetworkEnvironment.swift */,
 				97F00A39286EB4AA00399F2E /* JSONHelper.swift */,
+				97F00A5E286ECFB600399F2E /* ToolBooxEndpoints.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -202,6 +232,8 @@
 		97F00A35286EB2B000399F2E /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				97F00A7F286F4EE500399F2E /* UserCredential */,
+				97F00A77286EDC3100399F2E /* UsesCases */,
 				97F00A36286EB2B800399F2E /* TestAppError */,
 			);
 			path = Core;
@@ -227,8 +259,122 @@
 		97F00A42286EBF6500399F2E /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				97F00A88286FEEA700399F2E /* HomeScene */,
+				97F00A54286EC65A00399F2E /* LogInScene */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		97F00A54286EC65A00399F2E /* LogInScene */ = {
+			isa = PBXGroup;
+			children = (
+				97F00A64286ED5B000399F2E /* Implementations */,
+				97F00A60286ED4CC00399F2E /* LogInPresenter.swift */,
+				97F00A75286ED75E00399F2E /* LogInDisplayLogic.swift */,
+				97F00A55286EC68800399F2E /* LogInViewController.swift */,
+				97F00A56286EC68800399F2E /* LogInViewController.xib */,
+			);
+			path = LogInScene;
+			sourceTree = "<group>";
+		};
+		97F00A59286ECACC00399F2E /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				97F00A5A286ECD3000399F2E /* CoordinatorProtocol.swift */,
+				97F00A5C286ECD6400399F2E /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		97F00A62286ED50D00399F2E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				97F00A85286F9AEF00399F2E /* Source */,
+				97F00A63286ED54200399F2E /* Repositories */,
+				97F00A2C286EAD9D00399F2E /* Networking */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		97F00A63286ED54200399F2E /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				97F00A83286F9A8700399F2E /* AuthenticationRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		97F00A64286ED5B000399F2E /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				97F00A65286ED5D600399F2E /* LogInPresenterImplementation.swift */,
+				97F00A67286ED63400399F2E /* LogInConfiguratorImplementation.swift */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		97F00A77286EDC3100399F2E /* UsesCases */ = {
+			isa = PBXGroup;
+			children = (
+				97F00A79286EDCC800399F2E /* SendLogInRequest.swift */,
+				97F00A7B286EDD5500399F2E /* SendLogOutRequest.swift */,
+			);
+			path = UsesCases;
+			sourceTree = "<group>";
+		};
+		97F00A7D286F4EC800399F2E /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				97F00A7E286F4ED400399F2E /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		97F00A7E286F4ED400399F2E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		97F00A7F286F4EE500399F2E /* UserCredential */ = {
+			isa = PBXGroup;
+			children = (
+				97F00A80286F4F0600399F2E /* UserCredentials.swift */,
+			);
+			path = UserCredential;
+			sourceTree = "<group>";
+		};
+		97F00A82286F9A2E00399F2E /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		97F00A85286F9AEF00399F2E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				97F00A86286F9B1400399F2E /* AuthenticationDataSource.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		97F00A88286FEEA700399F2E /* HomeScene */ = {
+			isa = PBXGroup;
+			children = (
+				97F00A8D286FF3A600399F2E /* Implementations */,
+				97F00A89286FEF2500399F2E /* HomeViewController.swift */,
+				97F00A8A286FEF2500399F2E /* HomeViewController.xib */,
+			);
+			path = HomeScene;
+			sourceTree = "<group>";
+		};
+		97F00A8D286FF3A600399F2E /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Implementations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,9 +486,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97F00A58286EC68800399F2E /* LogInViewController.xib in Resources */,
 				97F00A09286EAAF100399F2E /* LaunchScreen.storyboard in Resources */,
 				97F00A06286EAAF100399F2E /* Assets.xcassets in Resources */,
-				97F00A04286EAAF000399F2E /* Main.storyboard in Resources */,
+				97F00A8C286FEF2500399F2E /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,14 +618,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				97F00A38286EB2D000399F2E /* TestAppError.swift in Sources */,
+				97F00A5D286ECD6400399F2E /* MainCoordinator.swift in Sources */,
 				97F00A32286EAF7600399F2E /* EndpointProtocol.swift in Sources */,
 				97F00A2E286EAE5B00399F2E /* Router.swift in Sources */,
+				97F00A81286F4F0600399F2E /* UserCredentials.swift in Sources */,
+				97F00A66286ED5D600399F2E /* LogInPresenterImplementation.swift in Sources */,
 				97F00A3A286EB4AA00399F2E /* JSONHelper.swift in Sources */,
-				97F00A01286EAAF000399F2E /* ViewController.swift in Sources */,
+				97F00A8B286FEF2500399F2E /* HomeViewController.swift in Sources */,
+				97F00A7A286EDCC800399F2E /* SendLogInRequest.swift in Sources */,
 				97F00A34286EB06C00399F2E /* NetworkEnvironment.swift in Sources */,
+				97F00A5B286ECD3000399F2E /* CoordinatorProtocol.swift in Sources */,
 				97F00A30286EAF1E00399F2E /* AppNetworkRouter.swift in Sources */,
+				97F00A5F286ECFB600399F2E /* ToolBooxEndpoints.swift in Sources */,
+				97F00A7C286EDD5500399F2E /* SendLogOutRequest.swift in Sources */,
+				97F00A84286F9A8800399F2E /* AuthenticationRepository.swift in Sources */,
 				97F009FD286EAAF000399F2E /* AppDelegate.swift in Sources */,
+				97F00A57286EC68800399F2E /* LogInViewController.swift in Sources */,
+				97F00A87286F9B1400399F2E /* AuthenticationDataSource.swift in Sources */,
+				97F00A61286ED4CC00399F2E /* LogInPresenter.swift in Sources */,
 				97F009FF286EAAF000399F2E /* SceneDelegate.swift in Sources */,
+				97F00A68286ED63400399F2E /* LogInConfiguratorImplementation.swift in Sources */,
+				97F00A76286ED75E00399F2E /* LogInDisplayLogic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,14 +677,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		97F00A02286EAAF000399F2E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				97F00A03286EAAF000399F2E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		97F00A07286EAAF100399F2E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -664,7 +816,7 @@
 				INFOPLIST_FILE = SKTestapp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -692,7 +844,7 @@
 				INFOPLIST_FILE = SKTestapp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

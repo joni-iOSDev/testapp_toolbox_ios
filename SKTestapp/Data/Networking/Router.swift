@@ -23,7 +23,7 @@ class Router<EndPoint: EndpointProtocol>: AppNetworkRouter {
         
         AF.request(url, method: endpoint.httpMerthod, parameters: params, headers: endpoint.headers).responseData { response in
             print("APP123 URL Request -> \(String(describing: response.request?.urlRequest))")
-            print("APP123 URL Request -> \(String(describing: response.response?.statusCode))")
+            print("APP123 URL Request code -> \(String(describing: response.response?.statusCode))")
 
             switch response.result {
                 case .success(let dataResponse):
@@ -31,6 +31,6 @@ class Router<EndPoint: EndpointProtocol>: AppNetworkRouter {
                 case .failure(let error):
                     onResponse(.failure(error))
             }
-        }
+        }.validate(statusCode: 200..<399)
     }
 }

@@ -12,4 +12,9 @@ enum AppErrorsType: String, Error {
     case errorConexion = "Bad conextion"
     case routerError = "Error during the request"
     case marvelDataError = "Error with response object"
+    case invalidCredentials = "Invalid username or password"
+}
+
+enum AppUserCredentialErrors: String, Error {
+    case invalidCredentials = "Invalid username or password"
 }

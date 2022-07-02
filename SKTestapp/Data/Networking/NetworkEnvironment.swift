@@ -8,8 +8,7 @@
 import Foundation
 
 fileprivate struct constants {
-    static let developUrl = "https://gateway.endpoint.com"
-    static let port = ":443"
+    static let developUrl = "https://echo-serv.tbxnet.com"
 }
 
 public enum NetworkEnvironment {
@@ -21,11 +20,11 @@ public enum NetworkEnvironment {
     public func getURL() -> String {
         switch self {
             case .develop:
-                return constants.developUrl.appending(constants.port)
+                return constants.developUrl
             case .mock:
                 return ""
             case .prod:
-                return "https://prod.marvel.com"
+                return "https://prod.prod.com"
             case .testing:
                 return "https://jsonplaceholder.typicode.com"
         }

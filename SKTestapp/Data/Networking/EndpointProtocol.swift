@@ -15,8 +15,6 @@ protocol EndpointProtocol {
     var httpMerthod: HTTPMethod { get }
     var headers: HTTPHeaders? { get }
     var params: Parameters? { get }
-    var apiKey: String? { get }
-    var apiAuth: Parameters? { get }
 }
 
 extension Parameters {
