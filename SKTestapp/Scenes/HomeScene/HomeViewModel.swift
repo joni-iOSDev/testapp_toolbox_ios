@@ -6,12 +6,29 @@
 //
 
 import Foundation
+import CoreGraphics
+
+fileprivate struct Constants {
+    static let title = "Home"
+}
 
 class HomeViewModel {
     
-    let presenter: HomePresenter
+    private let presenter: HomePresenter
     
     init(presenter: HomePresenter) {
         self.presenter = presenter
+    }
+    
+    func rows() -> Int {
+        return presenter.getCountList()
+    }
+    
+    func titleViewController() -> String {
+        return Constants.title
+    }
+    
+    static func heightTableViewCell() -> CGFloat {
+        return 200
     }
 }

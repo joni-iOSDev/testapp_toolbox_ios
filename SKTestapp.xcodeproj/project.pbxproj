@@ -54,6 +54,12 @@
 		97F00AB52870D01600399F2E /* CarouselEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00AB42870D01600399F2E /* CarouselEntity.swift */; };
 		97F00AB72870D04D00399F2E /* Carousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00AB62870D04D00399F2E /* Carousel.swift */; };
 		97F00AB92870E9EA00399F2E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00AB82870E9EA00399F2E /* HomeViewModel.swift */; };
+		97F00AC22871238F00399F2E /* CarouselCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00AC02871238F00399F2E /* CarouselCell.swift */; };
+		97F00AC32871238F00399F2E /* CarouselCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97F00AC12871238F00399F2E /* CarouselCell.xib */; };
+		97F00AC62871281C00399F2E /* CarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00AC42871281C00399F2E /* CarouselCollectionViewCell.swift */; };
+		97F00AC72871281C00399F2E /* CarouselCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97F00AC52871281C00399F2E /* CarouselCollectionViewCell.xib */; };
+		97F00AC928715B8000399F2E /* CarouselViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00AC828715B8000399F2E /* CarouselViewModel.swift */; };
+		97F00ACB28716D0B00399F2E /* CarouselItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F00ACA28716D0B00399F2E /* CarouselItemViewModel.swift */; };
 		A25AD2F88D8DAF7CB3143048 /* Pods_SKTestappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70DC93F1DB82D6A1C22D13E4 /* Pods_SKTestappTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -128,6 +134,12 @@
 		97F00AB42870D01600399F2E /* CarouselEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselEntity.swift; sourceTree = "<group>"; };
 		97F00AB62870D04D00399F2E /* Carousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carousel.swift; sourceTree = "<group>"; };
 		97F00AB82870E9EA00399F2E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		97F00AC02871238F00399F2E /* CarouselCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCell.swift; sourceTree = "<group>"; };
+		97F00AC12871238F00399F2E /* CarouselCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarouselCell.xib; sourceTree = "<group>"; };
+		97F00AC42871281C00399F2E /* CarouselCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewCell.swift; sourceTree = "<group>"; };
+		97F00AC52871281C00399F2E /* CarouselCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarouselCollectionViewCell.xib; sourceTree = "<group>"; };
+		97F00AC828715B8000399F2E /* CarouselViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewModel.swift; sourceTree = "<group>"; };
+		97F00ACA28716D0B00399F2E /* CarouselItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselItemViewModel.swift; sourceTree = "<group>"; };
 		C3527BFB41AC8BFFF2B08D85 /* Pods-SKTestapp-SKTestappUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKTestapp-SKTestappUITests.release.xcconfig"; path = "Target Support Files/Pods-SKTestapp-SKTestappUITests/Pods-SKTestapp-SKTestappUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D911B34E080C03270B082477 /* Pods-SKTestappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKTestappTests.release.xcconfig"; path = "Target Support Files/Pods-SKTestappTests/Pods-SKTestappTests.release.xcconfig"; sourceTree = "<group>"; };
 		DE715D50A8BAF191BAE7E124 /* Pods-SKTestappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKTestappTests.debug.xcconfig"; path = "Target Support Files/Pods-SKTestappTests/Pods-SKTestappTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -389,6 +401,7 @@
 		97F00A88286FEEA700399F2E /* HomeScene */ = {
 			isa = PBXGroup;
 			children = (
+				97F00ABA2871198E00399F2E /* Views */,
 				97F00A8D286FF3A600399F2E /* Implementations */,
 				97F00A922870002900399F2E /* HomePresenter.swift */,
 				97F00A942870005400399F2E /* HomeDisplayLogic.swift */,
@@ -425,6 +438,27 @@
 				97F00AB12870B05E00399F2E /* SessionManager.swift */,
 			);
 			path = SessionManager;
+			sourceTree = "<group>";
+		};
+		97F00ABA2871198E00399F2E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				97F00ABF28711A4E00399F2E /* Carousel */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		97F00ABF28711A4E00399F2E /* Carousel */ = {
+			isa = PBXGroup;
+			children = (
+				97F00AC02871238F00399F2E /* CarouselCell.swift */,
+				97F00AC12871238F00399F2E /* CarouselCell.xib */,
+				97F00AC42871281C00399F2E /* CarouselCollectionViewCell.swift */,
+				97F00AC52871281C00399F2E /* CarouselCollectionViewCell.xib */,
+				97F00AC828715B8000399F2E /* CarouselViewModel.swift */,
+				97F00ACA28716D0B00399F2E /* CarouselItemViewModel.swift */,
+			);
+			path = Carousel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -538,8 +572,10 @@
 			files = (
 				97F00A58286EC68800399F2E /* LogInViewController.xib in Resources */,
 				97F00A09286EAAF100399F2E /* LaunchScreen.storyboard in Resources */,
+				97F00AC72871281C00399F2E /* CarouselCollectionViewCell.xib in Resources */,
 				97F00A06286EAAF100399F2E /* Assets.xcassets in Resources */,
 				97F00A8C286FEF2500399F2E /* HomeViewController.xib in Resources */,
+				97F00AC32871238F00399F2E /* CarouselCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -677,7 +713,9 @@
 				97F00A66286ED5D600399F2E /* LogInPresenterImplementation.swift in Sources */,
 				97F00AA2287017CA00399F2E /* UserAuthenticationEntity.swift in Sources */,
 				97F00A8F286FFF5E00399F2E /* HomeConfiguratorImplementation.swift in Sources */,
+				97F00AC928715B8000399F2E /* CarouselViewModel.swift in Sources */,
 				97F00A3A286EB4AA00399F2E /* JSONHelper.swift in Sources */,
+				97F00AC22871238F00399F2E /* CarouselCell.swift in Sources */,
 				97F00A952870005400399F2E /* HomeDisplayLogic.swift in Sources */,
 				97F00AB22870B05E00399F2E /* SessionManager.swift in Sources */,
 				97F00AA9287085B700399F2E /* CarouselDataSource.swift in Sources */,
@@ -696,12 +734,14 @@
 				97F00AA42870188F00399F2E /* UserAuthentication.swift in Sources */,
 				97F009FD286EAAF000399F2E /* AppDelegate.swift in Sources */,
 				97F00AB52870D01600399F2E /* CarouselEntity.swift in Sources */,
+				97F00ACB28716D0B00399F2E /* CarouselItemViewModel.swift in Sources */,
 				97F00A91286FFFB100399F2E /* HomePresenterImplementation.swift in Sources */,
 				97F00A57286EC68800399F2E /* LogInViewController.swift in Sources */,
 				97F00A87286F9B1400399F2E /* AuthenticationDataSource.swift in Sources */,
 				97F00A61286ED4CC00399F2E /* LogInPresenter.swift in Sources */,
 				97F009FF286EAAF000399F2E /* SceneDelegate.swift in Sources */,
 				97F00A68286ED63400399F2E /* LogInConfiguratorImplementation.swift in Sources */,
+				97F00AC62871281C00399F2E /* CarouselCollectionViewCell.swift in Sources */,
 				97F00A76286ED75E00399F2E /* LogInDisplayLogic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

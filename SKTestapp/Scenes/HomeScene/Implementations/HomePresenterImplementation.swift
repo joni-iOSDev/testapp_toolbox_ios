@@ -25,7 +25,6 @@ extension HomePresenterImplementation: HomePresenter {
         return carousels.count
     }
     
-    
     func actionAlertTapped() {
         // default action
         self.logout()
@@ -34,6 +33,8 @@ extension HomePresenterImplementation: HomePresenter {
     func viewDidLoad() {
         viewController.configureSigOutButton()
         getCarousels()
+        viewController.registerCell()
+        viewController.setupUI()
     }
     
     private func getCarousels() {
@@ -41,12 +42,19 @@ extension HomePresenterImplementation: HomePresenter {
             switch carouselsResult {
                 case .success(let carousels):
                     self.carousels = carousels
+                    self.viewController.refreshTableView()
                     break
-                case .failure(let error):
+                case .failure(_):
                     self.viewController.showFailureLogin(with: "Hubo un error con su sessión, lo sentimos")
                     break
             }
         })
+    }
+    
+    func configure(_ cell: CarouselCellDisplayLogic, _ index: IndexPath) {
+        let carousel = self.carousels[index.row]
+        let viewModel = CarouselViewModel(courselModel: carousel)
+        cell.setCarousel(viewModel)
     }
     
     func logout() {

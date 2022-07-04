@@ -11,5 +11,8 @@ protocol HomeDisplayLogic: AnyObject {
     func configureSigOutButton()
     func closeScene()
     func showFailureLogin(with message: String)
+    func registerCell()
+    func refreshTableView()
+    func setupUI()
 
 }
